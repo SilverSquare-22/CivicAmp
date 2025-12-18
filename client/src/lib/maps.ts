@@ -5,7 +5,7 @@ declare global {
   }
 }
 
-const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "AIzaSyBgQF7V2-5UEn4AwXsTb5mjRipKbjhpfZ8"; // Default key should be replaced with actual key from environment variables
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY; // Default key should be replaced with actual key from environment variables
 
 // Load Google Maps API
 export function getGoogleMaps(): Promise<any> {
